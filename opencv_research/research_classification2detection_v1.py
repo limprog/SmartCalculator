@@ -1,11 +1,7 @@
-# In this file will be presented solution of task TEAM-7 solution and study will be conducted for the task
-
-
+# In this file will be presented solution of task TEAM-7 solution and study will be conducted for the task TEAM-5
 
 import os
-import cv2
-import numpy as np
-from new_def_cv import *
+from opencv_research.utils.new_def_cv import *
 
 img = cv2.imread(os.path.join("data/classification2detection/photo_2024-08-09_20-49-42.jpg"))
 img = cv2.resize(img, (0,0), fx=0.7, fy=0.7)
