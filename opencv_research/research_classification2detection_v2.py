@@ -18,7 +18,7 @@ for class_cv in list_classes:
 f.close()
 
 print("Start")
-for i in tqdm(range(500)):
+for i in tqdm(range(1000)):
     white_img = cv2.resize(cv2.imread("opencv_research/Wallpaper-1-1920x1080.jpg"), (0, 0), fx=0.5, fy=0.5)
     new_img = white_img.copy()
     h, w, _ = white_img.shape
