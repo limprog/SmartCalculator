@@ -41,7 +41,7 @@ for i in tqdm(range(500)):
                 break
 
         new_img[y:y+height, x:x+width] = cv2.addWeighted(img, 1, new_img[y:y+height, x:x+width], 0, 0)
-        list_param.append(f"{list_classes.index(class_name)} {x/w} {y/h} {width/w} {height/h}")
+        list_param.append(f"{list_classes.index(class_name)} {(x+width/2) / w} {(y+height/2) / h} {width / w} {height / h}")
         del w_list[x:x+width-1]
         del h_list[y:y+height-1]
     cv2.imwrite(f"{dir}/{i}.png", new_img)
